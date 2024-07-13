@@ -1,6 +1,6 @@
 # To Learn Python by studying English 
 
- 一个命令行界面的小程序， 计划实现的功能：
+ 一个命令行界面的背单词小程序， 计划实现的功能：
 
 * 0: Load new words from outside file, such as excel
 * 1: English test, or give Chinese, input English
@@ -29,6 +29,8 @@ git config --global user.name "Your Name"
 git config --global user.email you@example.com
 
 git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+
+注意：<githubtoken> 是由账号 birdflying0 生成的 
 
 
 ## 修改代码之后 上传：
