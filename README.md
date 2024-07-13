@@ -42,3 +42,5 @@ git push
 # 参考链接
 
  * Pandas 教程 :https://www.geeksforgeeks.org/pandas-tutorial/
+ * 理解 git 是怎么工作的： https://medium.com/@jjzcru/git-in-a-nutshell-b82cc4af5c32
+ * Git and GitHub in a Nutshell: Definitive tutorial for beginners : https://www.educative.io/blog/git-github-tutorial-beginners
