@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
 
-#import libraries
+import sys
 import random
 #regardless of lowercase or uppercase
 import ctypes
 
-# Word list with only the first three entries
-#word_list = [  
-#    ['household', '家庭'],  
-#    ['possess', '拥有，持有'],  
-#    ['remark', '言论，评述'],  
-#    ['counsel', '忠告，建议']
-#]
-
+# my module to load a file
 import getwords as gw
 
-word_list = gw.get_words("dict.xlsx")
+if len(sys.argv) < 2:
+    filename =  "dict.xlsx"
+else:
+    filename = sys.argv[1]
+
+word_list = gw.get_words(filename)
 
 #global variables
 t = len(word_list)
