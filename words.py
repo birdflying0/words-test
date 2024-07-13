@@ -1,15 +1,21 @@
+#!/usr/bin/env python3
+
 #import libraries
 import random
 #regardless of lowercase or uppercase
 import ctypes
 
 # Word list with only the first three entries
-word_list = [  
-    ['household', '家庭'],  
-    ['possess', '拥有，持有'],  
-    ['remark', '言论，评述'],  
-    ['counsel', '忠告，建议']
-]
+#word_list = [  
+#    ['household', '家庭'],  
+#    ['possess', '拥有，持有'],  
+#    ['remark', '言论，评述'],  
+#    ['counsel', '忠告，建议']
+#]
+
+import getwords as gw
+
+word_list = gw.get_words("dict.xlsx")
 
 #global variables
 t = len(word_list)
@@ -18,10 +24,13 @@ word_list.sort()
 
     
 # Prompt the user for translation direction once
-language = input("Enter 0 to translate English to Chinese, enter 1 to translate Chinese to English: ").strip().lower()
-while language not in ["0", "1"]:
-    print("Invalid input. Please enter 0 or 1.")
-    language = input("Enter 0 to translate English to Chinese, enter 1 to translate Chinese to English: ").strip().lower()
+language = input("Enter 0 to translate English to Chinese, enter 1 to translate Chinese to English, or q to quit: ").strip().lower()
+while language not in ["0", "1","q"]:
+    print("Invalid input. Please enter 0,1 or q.")
+    language = input("Enter 0 to translate English to Chinese, enter 1 to translate Chinese to English, or q to quit: ").strip().lower()
+
+if language == "q" :
+    exit(0) 
 
 # Main loop for the translation game
 while word_list:
