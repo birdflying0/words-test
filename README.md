@@ -13,7 +13,9 @@
 ## 安装 Python 的模块 pandas: 
 
 pip3 install --upgrade pip
+
 pip3 install pandas
+
 pip3 install openpyxl
 
 ## 注册一个Github 账号(需要一个邮箱来激活）
